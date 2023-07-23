@@ -1,2 +1,2 @@
 # amazon-clone
-Amazon Cloning Website
+Project on HTML, CSS, JavaScript <br>
