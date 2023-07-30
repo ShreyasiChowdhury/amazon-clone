@@ -9,12 +9,16 @@
 }
 
 body {
+    background-color: #e5e8eb;
     font-family: 'Jost', sans-serif;
     font-family: 'Noto Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Space Grotesk', sans-serif;
+    height: 2000px;
+    position: absolute;
+    width: 100%;
 }
 
 .header {
@@ -274,7 +278,7 @@ body {
     background-color: transparent;
     transform: translateX(-100%);
     display: flex;
-    transition: transform 0.3s;
+    transition: transform 0.01s;
 }
 
 .sidebar-show {
@@ -354,12 +358,14 @@ body {
 
 .image-item {
     min-width: 100%;
+    height: 600px;
     transition: transform 0.3s;
 }
 
 .image-item img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .image-btn-container {
@@ -398,7 +404,184 @@ body {
     box-shadow: -2px -2px 2px white, 2px 2px 2px white;
 }
 
+.main {
+    position: relative;
+    top: -350px;
+}
+
+.card-product-container {
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-product {
+    background-color: white;
+    border: 1px solid rgba(208, 200, 200, 0.499);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 320px;
+    height: 470px;
+    box-shadow: -30px 0px 40px rgb(255, 255, 255, 0.4), 30px 0px 40px rgb(255, 255, 255, 0.4);
+}
+
+.card-product h2 {
+    padding-top: 15px;
+    margin: 12px;
+    font-size: 22px;
+}
+
+.card-product p {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.card-product-nested-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card-product-nested-card:hover {
+    cursor: pointer
+}
+
+.card-nested {
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card-nested img {
+    width: 128px;
+    height: 102px;
+    object-fit: cover;
+}
+
+.final-exit-card {
+    margin: 12px;
+    font-size: 13px;
+    color: rgb(16, 134, 145);
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.final-exit-card:hover {
+    color: rgb(255, 115, 0);
+    text-decoration: underline;
+    cursor: pointer
+}
+
+.card-whole {
+    padding: 20px;
+}
+
+.card-whole img {
+    height: auto;
+    width: 276px;
+    object-fit: cover;
+}
+
+.card-whole img:hover {
+    cursor: pointer;
+}
+
+.deals-container {
+    position: relative;
+    top: -350px;
+    background-color: white;
+    height: 290px;
+    margin: 30px;
+    padding: 15px;
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.1), 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.deals-heading {
+    display: flex;
+    align-items: center;
+    padding: 2px 15px;
+    margin-bottom: 10px;
+}
+
+.deals-heading h1 {
+    font-size: 22px;
+}
+
+.deals-heading p {
+    padding-left: 20px;
+}
+
+.deals-heading p a {
+    text-decoration: none;
+    color: rgb(16, 134, 145);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.deals-heading p a:hover {
+    color: rgb(255, 115, 0);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.deals-product-container {
+    position: relative;
+}
+
+.deals-product-container:hover {
+    cursor: pointer;
+}
+
+.deals-btn-container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.deals-btn {
+    position: relative;
+    padding: 35px 15px;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    z-index: 1;
+    background: transparent;
+    color: transparent;
+}
+
+.deals-btn:hover {
+    color: black;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.deals-product-list {
+    display: flex;
+    overflow: hidden;
+}
+
+.deals-product-item {
+    min-width: 150px;
+    height: 200px;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: transform 1s;
+}
+
+.deals-product-item img {
+    width: 100%;
+    height: 100%;
+}
+
 .footer {
+    position: relative;
+    top: -350px;
     width: 100%;
     height: 450px;
     transition: all 0.2s;
